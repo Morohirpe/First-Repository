@@ -3,56 +3,60 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="style.css" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik&display=swap" rel="stylesheet">
 	<title>Document</title>
 </head>
 <body>
-	<p id="demo">Click the button to change the layout of this paragraph</p>
-
-<button onclick="myFunction()">Студия</button>
-
-<script>
-function myFunction() {
-  let x = document.getElementById("demo");
-  x.style.fontSize = "25px"; 
-  x.style.color = "red"; 
-}
-</script>
-<button onclick="myFunction()">Клиенты</button>
-
-<script>
-function myFunction() {
-  let x = document.getElementById("demo");
-  x.style.fontSize = "25px"; 
-  x.style.color = "red"; 
-}
-</script>
-<button onclick="myFunction()">Магазин</button>
-
-<script>
-function myFunction() {
-  let x = document.getElementById("demo");
-  x.style.fontSize = "25px"; 
-  x.style.color = "red"; 
-}
-</script>
-<button onclick="myFunction()">Клиенты</button>
-
-<script>
-function myFunction() {
-  let x = document.getElementById("demo");
-  x.style.fontSize = "25px"; 
-  x.style.color = "red"; 
-}
-</script>
-<script>
-	<img src="nerds-logo.png" alt="Логотип сайта">
-	const img = document.querySelector('img');
-img.addEventListener('click', () => {
-  console.log('Картинка была нажата');
-});
-</script>
-	<img src="nerds-logo.png" alt="Логотип сайта">
-	<vl>
-	</vl>
+	<header class="header">
+		<div class="wrapper">
+			<div class="header--inner">
+				<a href="#">
+					<img class="logo" src="./img/nerds-logo.png" alt="nerds-logo">
+				</a>
+			<nav class="navigation">
+				<ul class="nav--inner">
+					<li class="nav-link" ><a class="nav-link" href="#">Студия</a></li>
+					<li class="nav-link" ><a class="nav-link" href="#">Клиенты</a></li>
+					<li class="nav-link" ><a class="nav-link" href="#">Магазин</a></li>
+					<li class="nav-link" ><a class="nav-link" href="#">Контакты</a></li>
+				</ul>
+			</nav>
+			<img class="cart-icon" src="./img/cart-icon.svg" alt="">
+			<a href="#" class="basket">Корзина</a>
+			</div>
+		</div>
+	</header>
+	<main class="main">
+		<div class="wrapper">
+			<div class="main--inner">
+				<section class="intro">
+					<div class="intro--inner">
+						<div class="intro--header">
+							<div class="intro--info">
+								<h1 class="intro--title">Долго, дорого,  скрупулезно.</h1>
+								<p class="intro--subtitle">Математически выверенный дизайн  для вашего сайта или мобильного приложения.</p>
+								<button class="more--info">Узнать больше</button>
+							</div>
+							<div class="intro-slider">
+								<img src="./img/slider.jpg" alt="">
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="services">
+					<div class="services-inner">
+						<div class="services--header">
+							<div class="services--info">
+								
+							</div>
+						</div>
+					</div>
+				</section>
+			</div>
+		</div>
+	</main>
 </body>
 </html>
