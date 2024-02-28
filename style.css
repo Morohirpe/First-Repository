@@ -37,20 +37,28 @@ body {
 	font-size: 16px;
 }
 
-.basket {
-		text-decoration: none;
-	color: black;
-	text-transform: uppercase;
-	font-weight: 500;
-	font-size: 16px;
-	color: #FB565A;
-	transition: 0.3s;
-}
-
 .nav-link:hover{
 	color: #FB565A;
 	transition: 0.3s;
 }
+
+.basket {
+	text-decoration: none;
+	color: black;
+	text-transform: uppercase;
+	font-weight: 500;
+	font-size: 16px;
+	transition: 0.3s;
+}
+.basket:hover {
+	color: #FB565A;
+}
+
+.nav-basket:hover{
+	color: #FB565A;
+	transition: 0.3s;
+}
+
 
 .header--inner {
 	display: flex;
@@ -110,18 +118,88 @@ body {
 
 /*services*/
 
+.order {
+	padding-top: 100px;
+	margin-bottom: 150px;		
+}
 
+.order-inner {
+	display: flex;
+	justify-content: space-between;
+}
 
-.order--info {
-		width: 160px;
+.card--subtitle {
+	max-width: 260px
+}
+
+.card--button {
+	width: 160px;
 	height: 50px;
 	border: none;
-	border-radius: 6px;
+	border-radius: 4px;
 	background-color: #FB565A;
+	color: #fff;
+	text-transform: uppercase;
 	font-weight: 400;
 	font-size: 16px;
-	color: white;
-	text-transform: uppercase;
+	transition: 0.3s ease;
+}
+
+.card--button:active {
+	transform: scale(0.98);
+}
+
+.web:hover {
+	background-color: #E74246;
+}
+.web:active {
+	background-color: #D7373B; 
+}
+.app {
+	background-color: #00CA74;
+}
+
+.app:active {
+	background-color: #00AA62;
+}
+
+.prez {
+	background-color: #EFC849; 
+}
+
+.prez:hover {
+	background-color: #EAB534;
+}
+
+.prez:active {
+	background-color: #E5A722;
 }
 
 
+/*catalog*/
+.cards--list {
+	display: grid;
+	grid-template-columns: repeat(2, 360px);
+	gap: 40px; 
+}
+
+.card {
+	width: 360px;
+	height: 618px;
+}
+
+.card--inner {
+	height: 618px;
+	background-image: url(img/ggg.jpg);
+}
+.card--header {
+	background-color: #4D4D4D;
+	height: 40px;
+}
+
+.button-inner {
+	width: 25px;
+	height: 25px;
+	border-radius: 50%;
+	border: none;
+}
